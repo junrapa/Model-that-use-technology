@@ -11,7 +11,7 @@
 
 <body>
     <h1>포켓몬도감만들기</h1>
-    <p>피카츄, 파이리, 꼬부기, 뮤츠를 구별해서 이에 대한 설명을 보여주는 웹 앱</p>
+    <p>피카츄, 파이리, 꼬부기, 뮤를 구별해서 이에 대한 설명을 보여주는 웹 앱</p>
     <button type="button" onclick="init()">Start</button>
     <button type="button" onclick="predict()">Predict</button>
     <button type="button" onclick="show()">show</button>
@@ -92,7 +92,9 @@
         }
 
 
-
+        async function show() {
+            show("my-image")
+        }
         // run the webcam image through the image model
         async function predict() {
             // predict can take in an image, video or canvas html element
